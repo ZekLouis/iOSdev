@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9FE891401F5094CF00E37209 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8913F1F5094CF00E37209 /* AppDelegate.swift */; };
-		9FE891421F5094CF00E37209 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE891411F5094CF00E37209 /* ViewController.swift */; };
+		9FE891421F5094CF00E37209 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE891411F5094CF00E37209 /* SearchResultsViewController.swift */; };
 		9FE891451F5094CF00E37209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE891431F5094CF00E37209 /* Main.storyboard */; };
 		9FE891471F5094CF00E37209 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE891461F5094CF00E37209 /* Assets.xcassets */; };
 		9FE8914A1F5094CF00E37209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE891481F5094CF00E37209 /* LaunchScreen.storyboard */; };
 		9FE891551F5094CF00E37209 /* HelloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE891541F5094CF00E37209 /* HelloWorldTests.swift */; };
 		9FE891601F5094CF00E37209 /* HelloWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8915F1F5094CF00E37209 /* HelloWorldUITests.swift */; };
+		9FE8916E1F50A42300E37209 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8916D1F50A42300E37209 /* APIController.swift */; };
+		9FE891701F50C63C00E37209 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8916F1F50C63C00E37209 /* Album.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		9FE8913C1F5094CF00E37209 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE8913F1F5094CF00E37209 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FE891411F5094CF00E37209 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FE891411F5094CF00E37209 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		9FE891441F5094CF00E37209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FE891461F5094CF00E37209 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FE891491F5094CF00E37209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		9FE8915B1F5094CF00E37209 /* HelloWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE8915F1F5094CF00E37209 /* HelloWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldUITests.swift; sourceTree = "<group>"; };
 		9FE891611F5094CF00E37209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FE8916D1F50A42300E37209 /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		9FE8916F1F50C63C00E37209 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				9FE8913F1F5094CF00E37209 /* AppDelegate.swift */,
-				9FE891411F5094CF00E37209 /* ViewController.swift */,
+				9FE891411F5094CF00E37209 /* SearchResultsViewController.swift */,
 				9FE891431F5094CF00E37209 /* Main.storyboard */,
 				9FE891461F5094CF00E37209 /* Assets.xcassets */,
 				9FE891481F5094CF00E37209 /* LaunchScreen.storyboard */,
 				9FE8914B1F5094CF00E37209 /* Info.plist */,
+				9FE8916D1F50A42300E37209 /* APIController.swift */,
+				9FE8916F1F50C63C00E37209 /* Album.swift */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FE891421F5094CF00E37209 /* ViewController.swift in Sources */,
+				9FE891421F5094CF00E37209 /* SearchResultsViewController.swift in Sources */,
 				9FE891401F5094CF00E37209 /* AppDelegate.swift in Sources */,
+				9FE8916E1F50A42300E37209 /* APIController.swift in Sources */,
+				9FE891701F50C63C00E37209 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
